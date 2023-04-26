@@ -92,3 +92,16 @@
 // Пример результата
 // olleh
 
+
+// let word = 'hello';
+
+
+// for (let i = string.length -1 ; i > - 1; i--){
+        
+     
+//         console.log(string(i))
+//     }
+
+    
+
+
