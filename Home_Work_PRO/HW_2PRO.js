@@ -28,10 +28,20 @@
 
 // let i = 1900
 
-// while(i <= 2023){
+// 1) while(i <= 2023){
 //     console.log(i)
 //     i += 4
 // }
+
+//  2) for (let i = 1900; i <= 2023; i++){
+//     if (i % 4 == 0 && (i % 400 == 0 || i % 100 != 0))
+//     console.log(i);
+// }
+
+// 3)  for(let i =1900; i <=2023; i ++){
+   // if( i % 4 === 0 || i % 400 ===0){
+       // console.log(i);
+   // }
 
 
 
@@ -49,6 +59,9 @@
 
 
 
+//1) 
+
+
 // const n = 100;
 // for (let i = 1; i <= n; i++) {
 //   for (let j = 2; j <= i; j++) {
@@ -59,6 +72,27 @@
 //     }
 //   }
 // }
+ 
+
+// 2) for(let i = 2; i <= 100; i ++) {
+    //let isPrise = true;
+   // for (let j = 2; j <= Math.sqrt(i); j ++){
+        //if (i % j == 0){
+           // isPrise = false;
+           // break;
+        //}
+   // }
+
+// 3)
+//    for (let i = 0; i <= 100; i++){
+//     for (let j = 2; j <= i; j++){
+//         if (i % j === 0 && j < i){
+//             break
+//         } else if (j === i)
+
+//         console.log(i)
+//     }
+//    }
 
 
 
@@ -66,7 +100,7 @@
 // Task 4
 // В программе задана переменная word со строковым значением. Используя цикл, выведите обратный порядок букв согласно примеру:
 // Пример переменной:
-// let word = ‘hello’;
+// let word = 'hello';
 
 // Пример результата:
 // o
@@ -75,10 +109,16 @@
 // e
 // h
 
-// let string = 'hello'
+//let string = 'hello'
 
 // for(let i = 5; i >= 0; i--){
 //     console.log(string[i])
+// }
+
+// 2) что-то не то
+
+// for (let i = word.length -1; i >= 0; i--){
+//     console.log(word(i))
 // }
 
 
