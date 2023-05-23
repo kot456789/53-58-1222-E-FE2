@@ -129,14 +129,9 @@
 
 // let result = string.indexOf('date', string.indexOf('date') + 1)
 // console.log(result)
- 
 
 
-
-
-
-
-
+// ---------------------------
 
 // Повторить метод includes
 // includes(string, substring)

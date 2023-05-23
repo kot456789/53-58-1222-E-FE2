@@ -29,16 +29,16 @@
 // ---------------------------------
 // Task 4 
 
-function countString(string){
-    let count = 0
-    for (let i = 0; i < string.length; i++){
-        let elem = string[i].toLowerCase()
-        if (elem !== 'а' && elem !== 'о' && elem !== 'у' && elem !== 'с' ){
-            count += 1
-        }
-    }
-    return count
-}
+// function countString(string){
+//     let count = 0
+//     for (let i = 0; i < string.length; i++){
+//         let elem = string[i].toLowerCase()
+//         if (elem !== 'а' && elem !== 'о' && elem !== 'у' && elem !== 'с' ){
+//             count += 1
+//         }
+//     }
+//     return count
+// }
 
 // console.log(countString('ТИГРАааааааАААААН'))
 
