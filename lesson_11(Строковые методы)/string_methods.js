@@ -125,7 +125,7 @@
 
 // 2-ой тест
 // let string = '10.10.10.10.10.10 date 20.20.20 date 30.30.30 date'   
-// 32
+// // 32
 
 // let result = string.indexOf('date', string.indexOf('date') + 1)
 // console.log(result)

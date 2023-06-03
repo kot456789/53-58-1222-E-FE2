@@ -33,7 +33,7 @@
 
 // Решение 3
 
-const initCap = (string) => string.replace(string[0], string[0].toUpperCase())
+// const initCap = (string) => string.replace(string[0], string[0].toUpperCase())
 
 // let result1 = initCap('sam')
 // let result2 = initCap('steven')

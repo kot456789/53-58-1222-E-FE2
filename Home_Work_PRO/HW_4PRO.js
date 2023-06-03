@@ -89,7 +89,6 @@
 // ]
 
 
-// 	Результат: ['Home','About','FAQ','Contacts']
 
 // Решение :
 
@@ -134,25 +133,25 @@
 
 // Решение:
 
-// let elems = [
-//     '<div><p class="text">Home</p></div>', 
-//     '<div><p class="text">About</p></div>', 
-//     '<div><p class="text">FAQ</p></div>', 
-//     '<div><p class="text">Contacts</p></div>' 
-//     ] 
+let elems = [
+    '<div><p class="text">Home</p></div>', 
+    '<div><p class="text">About</p></div>', 
+    '<div><p class="text">FAQ</p></div>', 
+    '<div><p class="text">Contacts</p></div>' 
+    ] 
 
-//     function clearData(array){
-//       for(let i = 0; i < array.length; i++){
-//         let index = array[i].indexOf('</')
-//         array[i] = array[i].slice(21,index)
+    function clearData(array){
+      for(let i = 0; i < array.length; i++){
+        let index = array[i].indexOf('</')
+        array[i] = array[i].slice(21,index)
         
 
-//       }
-//       console.log(array)
+      }
+      console.log(array)
     
-//  }
+ }
 
-// clearData(elems)
+clearData(elems)
 
 
 
