@@ -96,7 +96,7 @@
 // }
  
 // console.log(obj)
-// { age: 175, first_name: 'John' }
+// { age: 35, first_name: 'John' }
 
 
 // ---------------------------------
@@ -113,8 +113,8 @@
 // Цикл по КЛЮЧАМ и ЗАНЧЕНИЯМ объекта
 
 // for (let elem in car){
-//     console.log(elem)            КЛЮЧИ
-//     console.log(car[elem])       ЗНАЧЕНИЕ
+//     console.log(elem)            // КЛЮЧИ
+//     console.log(car[elem])       // ЗНАЧЕНИЕ
 // }
 
 
@@ -137,3 +137,63 @@
 //         console.log(obj[elem])
 //     }
 // }
+
+// -------------------------------
+// Задача 2
+
+// Задан объект. Вывдете значение сво-ств только у тех элементов,
+// чей ключ в конце определяет нечентное числовое значение 
+
+// let obj = {
+//     char1: true,
+//     char2: 'Windows',
+//     char3: 10,
+//     char4: 'Car',
+//     char5: 54,
+//     char6: 'String',
+// }
+
+// for (let elem in obj){
+//     // let num = elem[4]
+//     // let num = elem.slice(-1)
+//     let num = elem.replace('char', '')
+
+//     if (num % 2 !== 0){
+//         console.log( elem, obj[elem])
+//     }
+
+// }
+
+
+// ---------
+// Задача 3
+
+// Задан объект. Измените объект таким образом, чтобы в нем не было сво-св, которые содержат булевый тип
+// В решении необходимо вывести значение ЦЕЛОГО объекта 
+
+// let obj = {
+//     char1: true,
+//     char2: 'Windows',
+//     char3: 10,
+//     char4: false,
+//     char5: 54,
+//     char6: 'String',
+// }
+
+// for (let elem in obj){
+//     if (typeof obj[elem] === 'boolean'){
+//         delete obj[elem]
+//     }
+// }
+
+// console.log(obj)
+
+// {
+//     char2: 'Windows',
+//     char3: 10,
+//     char5: 54,
+//     char6: 'String',
+// }
+
+
+// https://learn.javascript.ru/regular-expressions
