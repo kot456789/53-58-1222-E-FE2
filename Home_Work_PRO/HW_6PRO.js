@@ -17,22 +17,25 @@
 
 // Решение
 
+
+// function getKeys(obj) {
+//   let keys = [];
+
+// for(let key in obj) {
+//     keys.push(key);
+//   }
+
+// return keys;
+// }
+
 // let someObj = {
-// key1: 'GLA',
-// key2: 'Golf',
-// key3: 'm4',
-// key4: 'Signum',
-// key5: 'Kuga'
+//   key1: 'value1',
+//   key2: 'value2',
+//   key3: 'value3',
+//   key4: 'value4',
+// };
 
-// }
-
-// for (let key in someObj){
-    
-//     console.log([key]) 
-// }
-
-// ---
-// console.log(Object.keys(someObj));
+// console.log(getKeys(someObj)) 
 
 
 // -----------------------------
@@ -68,25 +71,19 @@
 
 // Решение
 
-// let array =  [1,true,'3','value1',9,'key']
 
-// function  countString(){
-//     let String = {}
-//     for(let elem in array){ 
-//     String[elem] = array[elem]
+// function countString(arr) {
+//   let count = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (typeof arr[i] === "string") {
+//       count++;
+//     }
+//   }
+//   console.log(count);
 // }
 
-// console.log(String);
-// }
-// countString()
-
-
-
-
-
-
-
-
+// let array = [1, true, '3', 'value1', 9, 'key'];
+// countString(array)
 
 
 // ---------------------------
@@ -109,6 +106,23 @@
 // Решение
 
 
+
+// function getEntries(obj) {
+//   let entries = [];
+//   for (let key in obj) {
+//     entries.push([key, obj[key]]);
+//   }
+//   return entries;
+// }
+
+// let someObj = {
+//   key1: 'value1',
+//   key2: 'value2',
+//   key3: 'value3',
+//   key4: 'value4',
+// };
+
+// console.log(getEntries(someObj))
 
 
 
@@ -138,18 +152,16 @@
 
 // Решение
 
-// let array = [1,true,'3','value1',9,'key']
 
-array =  [1,true,'3','value1',9,'key']
-
-function  arraytoObjekt(arr){
-     obj = {}
-    for(let i = 0; i < arr.length; i++){ 
-    obj['key' + (i + 1)] - arr[i];
+function convertArrayToObject(array) {
+  var result = {};
+  for (var i = 0; i < array.length; i++) {
+    result['key' + (i+1)] = array[i];
+  }
+  return result;
 }
-return obj;
 
-}
-// let result = arraytoObjekt(array)
-console.log(result);
-
+var array = [1,true,'3','value1',9,'key'];
+var object = convertArrayToObject(array);
+console.log(object)
+	

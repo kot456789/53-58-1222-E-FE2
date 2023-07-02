@@ -1,0 +1,33 @@
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1512px;
+}
+nav{
+    height: 100px;
+    background-color: blue;
+    /* background-position: center; */
+}
+
+header{
+ height: 1242px;
+ background-color: aqua;
+ /* background-position: center; */
+}
+
+footer{
+    height: 800px;
+    background-color: brown;
+    /* background-position: center; */
+}
