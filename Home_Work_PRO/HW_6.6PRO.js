@@ -107,22 +107,22 @@
 
 
 
-function getEntries(obj) {
-  let entries = [];
-  for (let key in obj) {
-    entries.push([key, obj[key]]);
-  }
-  return entries;
-}
+// function getEntries(obj) {
+//   let entries = [];
+//   for (let key in obj) {
+//     entries.push([key, obj[key]]);
+//   }
+//   return entries;
+// }
 
-let someObj = {
-  key1: 'value1',
-  key2: 'value2',
-  key3: 'value3',
-  key4: 'value4',
-};
+// let someObj = {
+//   key1: 'value1',
+//   key2: 'value2',
+//   key3: 'value3',
+//   key4: 'value4',
+// };
 
-console.log(getEntries(someObj))
+// console.log(getEntries(someObj))
 
 
 
@@ -153,15 +153,15 @@ console.log(getEntries(someObj))
 // Решение
 
 
-// function convertArrayToObject(array) {
-//   var result = {};
-//   for (var i = 0; i < array.length; i++) {
-//     result['key' + (i+1)] = array[i];
-//   }
-//   return result;
-// }
+function convertArrayToObject(array) {
+  var result = {};
+  for (var i = 0; i < array.length; i++) {
+    result['key' + (i+1)] = array[i];
+  }
+  return result;
+}
 
-// var array = [1,true,'3','value1',9,'key'];
-// var object = convertArrayToObject(array);
-// console.log(object)
+var array = [1,true,'3','value1',9,'key'];
+var object = convertArrayToObject(array);
+console.log(object)
 	
