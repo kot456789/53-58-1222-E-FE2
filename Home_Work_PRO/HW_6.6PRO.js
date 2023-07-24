@@ -104,7 +104,7 @@
 
 
 // Решение
-
+ 
 
 
 // function getEntries(obj) {

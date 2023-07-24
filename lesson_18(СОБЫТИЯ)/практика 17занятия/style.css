@@ -1,9 +1,10 @@
-/* .user_elem{
+.user_elem{
     width: 300px;
     height: 150px;
+
     background-color: aqua;
 }
 
-h1{
-    font-size: ;
-} */
+h1 {
+    font-size: 20px;
+}
