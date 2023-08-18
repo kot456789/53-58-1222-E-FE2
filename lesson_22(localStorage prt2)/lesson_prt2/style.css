@@ -1,0 +1,28 @@
+
+form{
+    margin: 70px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.product_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-content: center;
+    gap: 30px
+}
+
+
+.product_item{
+    width: 300px;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+
+    border: 1px solid black;
+    border-radius: 50px;
+}
