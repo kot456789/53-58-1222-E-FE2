@@ -2,15 +2,15 @@
 // выводить информацию об этом пользоветеле в консоли
 
 // Первое решение (не актуальное)
-// function getUserInfo(id){
-//     let url = 'https://jsonplaceholder.typicode.com/users'
-//     fetch(url)
-//         .then(res => res.json())
-//         .then(data => {
-//             let user = data.find(elem => elem.id === id)
-//             console.log(user)
-//         })
-// }
+function getUserInfo(id){
+    let url = 'https://jsonplaceholder.typicode.com/users'
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            let user = data.find(elem => elem.id === id)
+            console.log(user)
+        })
+}
 
 // Второе решение (лучше, послольку вычисления происходят на backend-сервере)
 // function getUserInfo(id){
