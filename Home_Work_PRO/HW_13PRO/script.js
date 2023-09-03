@@ -1,9 +1,9 @@
-// const url = "https://dummyjson.com/products";
+const url = "https://dummyjson.com/products"
 
 // // Функция для получения данных от сервера
 // async function fetchData(url) {
-//   const response = await fetch(url);
-//   const data = await response.json();
+//   const response = await fetch(url)
+//   const data = await response.json()
 //   return data;
 // }
 
@@ -12,29 +12,29 @@
 //   const container = document.getElementById("container");
 
 // data.forEach((item) => {
-//     const div = document.createElement("div");
+//     const div = document.createElement("div")
 //     div.classList.add("product");
 
 // // Изображение товара
-// const img = document.createElement("img");
+// const img = document.createElement("img")
 // img.src = item.image;
 // div.appendChild(img);
 
 // // Имя продукта
-// const name = document.createElement("p");
-// name.textContent = item.name;
+// const name = document.createElement("p")
+// name.textContent = item.name
 // div.appendChild(name);
 
 // // Стоимость продукта
-// const price = document.createElement("p");
-// price.textContent = `Price: $${item.price}`;
+// const price = document.createElement("p")
+// price.textContent = `Price: $${item.price}`
 // div.appendChild(price);
 
 // // Рейтинг продукта
-// const rating = document.createElement("div");
-// rating.classList.add("rating");
-// rating.innerHTML = generateRating(item.rating);
-// div.appendChild(rating);
+// const rating = document.createElement("div")
+// rating.classList.add("rating")
+// rating.innerHTML = generateRating(item.rating)
+// div.appendChild(rating)
 
 // container.appendChild(div);
 // });
@@ -42,14 +42,14 @@
 
 // // Функция для генерации разметки рейтинга
 // function generateRating(rating) {
-//   const roundedRating = Math.round(rating);
+//   const roundedRating = Math.round(rating)
 
 // let markup = "";
 //   for (let i = 0; i < 5; i++) {
 //     if (i < roundedRating) {
-//       markup += '<span class="fa fa-star active"></span>';
+//       markup += '<span class="fa fa-star active"></span>'
 //     } else {
-//       markup += '<span class="fa fa-star"></span>';
+//       markup += '<span class="fa fa-star"></span>'
 //     }
 //   }
 
@@ -58,62 +58,97 @@
 
 // // Вызов функций
 // fetchData(url)
-//   .then((data) => renderData(data))
+//   .then((data) => renderData(data));
 //   .catch((error) => console.log(error));
 
 
 
 
-  // -------------------------
+//   // // -------------------------
 
-  async function fetchProducts() {
-    try {
-      const response = await fetch("https://dummyjson.com/products");
-      const data = await response.json();
-      render(data);
-    } catch (error) {
-      console.error(error);
+//   async function fetchProducts() {
+//     try {
+//       const response = await fetch("https://dummyjson.com/products")
+//       const data = await response.json()
+//       render(data);
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   }
+  
+//   function render(products) {
+//     const container = document.querySelector(".container")
+  
+//   for (const product of products) {
+//       const div = document.createElement("div")
+//       div.classList.add("product");
+  
+//   const image = document.createElement("img")
+//   image.src = product.image
+//   div.appendChild(image);
+  
+//   const name = document.createElement("p")
+//   name.textContent = product.name
+//   div.appendChild(name);
+  
+//   const price = document.createElement("p")
+//   price.textContent = "Price: $" + product.price
+//   div.appendChild(price);
+  
+//   const ratingDiv = document.createElement("div")
+//   ratingDiv.classList.add("rating")
+//   ratingDiv.innerHTML = getRatingHTML(Math.round(product.rating))
+//   div.appendChild(ratingDiv)
+  
+//   container.appendChild(div);
+//   }
+//   }
+  
+//   function getRatingHTML(rating) {
+//     let starsHTML = ""
+//     for (let i = 0; i < 5; i++) {
+//       if (i < rating) {
+//         starsHTML += '<span class="fa fa-star active"></span>'
+//       } else {
+//         starsHTML += '<span class="fa fa-star"></span>'
+//       }
+//     }
+//     return starsHTML
+//   }
+  
+//   fetchProducts();
+ 
+
+// -----------------------------
+// -----------------------------
+  
+const div_elem = document.querySelector('div')
+
+function renderRating(n){
+    const div_rating = document.createElement('div')
+    for(let i = 1; i <= 5; i++){
+        let span = document.createElement('span')
+        span.className = 'fa fa-star'
+        if (i <= n){
+            span.classList.add('active')
+        }
+        div_rating.append(span)
     }
-  }
-  
-  function render(products) {
-    const container = document.querySelector(".container");
-  
-  for (const product of products) {
-      const div = document.createElement("div");
-      div.classList.add("product");
-  
-  const image = document.createElement("img");
-  image.src = product.image;
-  div.appendChild(image);
-  
-  const name = document.createElement("p");
-  name.textContent = product.name;
-  div.appendChild(name);
-  
-  const price = document.createElement("p");
-  price.textContent = "Price: $" + product.price;
-  div.appendChild(price);
-  
-  const ratingDiv = document.createElement("div");
-  ratingDiv.classList.add("rating");
-  ratingDiv.innerHTML = getRatingHTML(Math.round(product.rating));
-  div.appendChild(ratingDiv);
-  
-  container.appendChild(div);
-  }
-  }
-  
-  function getRatingHTML(rating) {
-    let starsHTML = "";
-    for (let i = 0; i < 5; i++) {
-      if (i < rating) {
-        starsHTML += '<span class="fa fa-star active"></span>';
-      } else {
-        starsHTML += '<span class="fa fa-star"></span>';
-      }
-    }
-    return starsHTML;
-  }
-  
-  fetchProducts();
+    return div_rating
+
+
+    
+}
+
+
+div_elem.append(renderRating(5));
+div_elem.append(renderRating(4));
+div_elem.append(renderRating(3));
+
+div_elem.append(renderRating(3));
+div_elem.append(renderRating(2));
+div_elem.append(renderRating(1));
+
+div_elem.append(renderRating(2));
+div_elem.append(renderRating(5));
+div_elem.append(renderRating(4));

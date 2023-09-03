@@ -1,0 +1,35 @@
+
+* {margin: 0;
+     padding: 0;
+      box-sizing: border-box;
+    }
+
+
+
+.active {
+	color: orange
+}
+
+
+/* 
+#root {
+    margin: 50px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+} */
+
+.container{
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid black;
+    padding: 15px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.block {
+    border: 1px solid black;
+    padding: 10px;
+}

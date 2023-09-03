@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+.navbar {
+    background-color: red;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu__link {
+    padding: 8px 16px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-menu__link--active {
+    background-color: #fff;
+    color: #000;
+}
+
+.navbar-menu__link:not(.navbar-menu__link--active):hover{
+    background-color: #000;
+}
+
+.dropdown {
+    display: none;
+}
+
+.dropdown__icon {
+    font-size: 24px;
+    padding: 5px 16px;
+    color: #fff;
+}
+
+.container{
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+@media (max-width:768px){
+    .dropdown {
+        display: inline-block;
+    }
+
+    /* .dropdown:hover ~ .navbar-menu{
+        display: flex;
+    } */
+
+    .navbar-menu{
+        flex-direction: column;
+    }
+
+    .navbar-menu__mobile {
+        display: none;
+    }
+}
+
+/* 
+
+an  Alle
+<nav class="navbar">
+        <div>
+            <div class="dropdown">
+                <i class="fa fa-bars dropdown__icon"></i>
+            </div>
+            <ul class="navbar-menu navbar-menu__mobile">
+                <li><a href="#" class="navbar-menu__link navbar-menu__link--active">Link 1</a></li>
+                <li><a href="#" class="navbar-menu__link">Link 2</a></li>
+                <li><a href="#" class="navbar-menu__link">Link 3</a></li>
+                <li><a href="#" class="navbar-menu__link">Link 4</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="container">
+            <h1>Hello World!!! </h1>
+        </section>
+    </main>
+.navbar-menu{
+        display: none;
+    }
+
+    .navbar-menu__mobile {
+        display: flex;
+        flex-direction: column;
+    }
+ */
