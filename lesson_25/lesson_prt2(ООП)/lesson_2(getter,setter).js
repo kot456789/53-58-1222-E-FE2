@@ -7,21 +7,21 @@
 // 3) getter перезаписать НЕЛЬЗЯ
 // 4) getter никогда не должен получать аргументы
 
-let pet = {
-    name: 'Шарик', 
-    breed: 'Пудель',
+// let pet = {
+//     name: 'Шарик', 
+//     breed: 'Пудель',
 
-    get nameBreed(){
-        return `${this.name} - это ${this.breed}`
-    },
-    get lengthName(){
-        let count = 0
-        for (let _ of this.name){
-            count += 1
-        }
-        return count
-    }
-}
+//     get nameBreed(){
+//         return `${this.name} - это ${this.breed}`
+//     },
+//     get lengthName(){
+//         let count = 0
+//         for (let _ of this.name){
+//             count += 1
+//         }
+//         return count
+//     }
+// }
 // pet.name = 'Richard'
 // console.log(pet.lengthName);
 
@@ -32,8 +32,8 @@ let pet = {
 // console.log(pet.nameBreed);
 // Диксон - это Пудель
 
-// ---------------
-// Пример попыткы перезаписать геттер
+//---------------
+//Пример попыткы перезаписать геттер
 // pet.nameBreed = '123'
 // console.log(pet.nameBreed)
 // Шарик - это Пудель
@@ -49,7 +49,7 @@ let pet = {
 // }
 // pet2.name = 'Rex'
 // console.log(pet.nameBreed)
-// Шарик - это Пудель
+// //Шарик - это Пудель
 
 
 // --------------------------
@@ -111,6 +111,7 @@ let pet = {
 // }
 // obj.setFullName = 'Steven King'
 // console.log(obj);
+// { name: 'Steven', lastName: 'King', setFullName: [Setter] }
 
 // ------------------------
 // Задача 3
@@ -156,3 +157,5 @@ let pet = {
 // let user1 = new User('Alex', 19)
 // user1.setAge = 2000
 // console.log(user1);
+
+// User { name: 'Alex', age: 23 }

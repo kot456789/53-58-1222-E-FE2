@@ -160,12 +160,12 @@ class Product{
 //     }
 // }
 
-// // let car1 = new Drive('Mustang')
+// let car1 = new Drive('Mustang')
 
-// // car1.driving(100)
+// car1.driving(100)
 
-// // car1.parking()
-// // console.log(car1);
+// car1.parking()
+// console.log(car1);
 
 // class Car extends Drive{
 //     constructor(model){
