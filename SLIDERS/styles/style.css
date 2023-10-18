@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .frame {
+    width: 500px;
+    height: 500px;
+    border: 10px solid rgb(255, 140, 159);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cards {
+    display: grid;
+    border: 10px solid rgb(83, 3, 255);
+    grid-auto-flow: column;
+    position: absolute;
+  }
+  
+  .card {
+    border: 10px solid rgb(0, 255, 72);
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+  }

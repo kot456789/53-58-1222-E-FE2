@@ -1,0 +1,65 @@
+
+$fontSize: 28;
+
+body {
+  font-size: $fontSize;
+
+  ul {
+    li {
+      font-size: $fontSize;
+    }
+  }
+}
+
+@mixin fontSettings {
+  font-size: larger;
+  font-weight: 500;
+  font-style: italic;
+  font-size: $fontSize;
+}
+
+@mixin box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  @include fontSettings;
+  @include box;
+  position: relative;
+}
+
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+
+.container {
+  @include bordered(red, 2px);
+}
+
+//-------------------------
+//-------------------------
+
+@mixin bordered($color: blue, $width: 1px) {
+  border: $width solid $color;
+}
+
+.container {
+  @include bordered(red, 2px);
+}
+
+
+// -----------------------------
+//-----------------------------
+
+.post {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .subheader {
+    font-size: 30px;
+  }
