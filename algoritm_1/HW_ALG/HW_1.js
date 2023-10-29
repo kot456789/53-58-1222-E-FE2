@@ -23,26 +23,26 @@
 // END
 
 
-function findIndex(arr, num) {
-    let index = -1
-    let i = arr.length - 1
+// function findIndex(arr, num) {
+//     let index = -1
+//     let i = arr.length - 1
 
-    while (i >= 0) {
-        if (arr[i] === num) {
-            index = i
-            break
-        }
-        i--
-    }
+//     while (i >= 0) {
+//         if (arr[i] === num) {
+//             index = i
+//             break
+//         }
+//         i--
+//     }
 
-    return index
-}
+//     return index
+// }
 
-const arr = [3, 6, 4, 7, 2, 1, 9]
-const num = 9
+// const arr = [3, 6, 4, 7, 2, 1, 9]
+// const num = 9
 
-const result = findIndex(arr, num);
-console.log(result);
+// const result = findIndex(arr, num);
+// console.log(result);
 
 
 
@@ -74,3 +74,11 @@ console.log(result);
 // const array = [3, 6, 4, 7, 2, 1, 9]
 // const result = sumOfSquares(array)
 // console.log(result);  
+
+
+
+
+function findKthElement(arr1, arr2, k) { let mergedArr = [...arr1, ...arr2]; mergedArr.sort((a, b) => a - b); return mergedArr[k-1]; }
+const arr1 = [100, 112, 256, 349, 770]; const arr2 = [72, 86, 113, 119, 265, 445, 892]; const k = 7;
+
+const result = findKthElement(arr1, arr2, k); console.log(result); // Output: 265
